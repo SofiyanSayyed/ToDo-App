@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#page{
+    background-color: #0b112f;
+}
+
+
+
+/*............. TODO BOX............... */
+#containerHome{  
+    border: 1px solid #ffc107;
+    background-color: rgb(7 43 77 / 74%);
+    border-radius: 12px;
+}
+
+
+
+/* .............BUTTONS...............*/
+#btns{/*PARENT DIV*/
+    position: relative;
+    overflow: hidden;
+    height: 80%;
+}
+#createTododiv{/*PARENT DIV*/
+    height: 20% !important;
+}
+
+.cstbtn{/*FOR BOTH THE BUTTONS*/
+    margin-top: 1rem;
+    width: 9rem;
+    height: 3rem;   
+}
+#createTodobtn{/*BUTTON 1ST*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+}
+#savebtn{
+    /* max-height: 2rem !important; */
+}
+#crossbtn{
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 1%;
+}
+
+#viewAllTodo{/*BUTTON 2ND*/ 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75px;
+    margin-top: 1rem !important;
+    display: block ;
+}
+
+
+
+
+/*...ON CLICK CREATE TODO (INPUT TEXT)...*/
+.createTodoText{ 
+    height: 18rem;
+    width: 90%;
+    position: absolute;
+    background-color: #000624   ;
+    left: -101%;
+    opacity: 0.1;
+    transition: 0.3s;
+    
+}
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid rgb(13, 202, 240) !important;
+    border-radius: 0% !important;
+   
+}
+
+#todoTextPara{
+    max-height: 10%;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.textBoxTransition{
+    left: 5%; 
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+
+
+/* ......VIEW ALL TODO'S LIST  (todoList)...... */
+#todo{  
+    max-height: 70% !important;
+    font-size: .8rem !important;
+    transform: translateY(-111%);
+    transition: .3s;
+
+}
+.todoListTransition{
+    transform: translateY(0%) !important;
+    transition: .3s;
+}
+.delete{
+   
+}   
+#crossbtnList{
+    font-size: 2rem;
+} 
+
+
+#popUp{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(11 17 47);
+    color: #0dcaf0;
+    box-shadow: 2px 2px 10px 1px black;
+}
